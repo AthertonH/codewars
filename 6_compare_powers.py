@@ -15,7 +15,6 @@
 # Only positive integers will be tested, including bigger numbers - you are warned now, so be diligent try to implement
 # an efficient solution not to drain too much on CW resources ;)!
 
-import math
 
 # def compare_powers(n1, n2):
 #     number1 = pow(n1[0], n1[1])
