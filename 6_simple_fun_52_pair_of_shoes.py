@@ -17,10 +17,10 @@
 #
 # For:
 #
-# shoes = [[0, 21],
-#          [1, 23],
-#          [1, 21],
-#          [1, 23]]
+shoes = [[0, 21],
+         [1, 23],
+         [1, 21],
+         [1, 23]]
 # the output should be false.
 #
 # Input/Output
@@ -35,5 +35,7 @@
 # true if it is possible to pair the shoes, false otherwise.
 
 def pair_of_shoes(shoes):
-	for shoe,size in shoes:
-        if shoe[:0] == shoe[:0] and shoe[:1] == shoe[:1]:
+	for pair in range(0,len(shoes),1):
+		for shoe,size in pair:
+			if pair[shoe:] != pair[:shoe] and pair[size] == pair[:size]:
+				return True
